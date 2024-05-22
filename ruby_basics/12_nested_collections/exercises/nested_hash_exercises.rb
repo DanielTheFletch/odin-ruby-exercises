@@ -59,7 +59,7 @@ def find_language_facts(languages, language_name, fact_index = 0)
   # argument is not given
 
   # the revised languages hash will look something like this:
-  # {
+  # { 
   #   ruby: { facts: ['fact 0', 'fact 1'],
   #           initial_release: 'December 25, 1996',
   #           is_beautiful?: true },
@@ -68,4 +68,6 @@ def find_language_facts(languages, language_name, fact_index = 0)
   #                 initial_release: 'December 4, 1995',
   #                 is_beautiful?: false }
   # }
+
+  languages[language_name][:facts][fact_index]
 end
